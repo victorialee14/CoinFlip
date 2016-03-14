@@ -3,16 +3,10 @@ package com.example.victorialee.coinflip;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import java.util.Random;
-import android.widget.TextSwitcher;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,12 +48,15 @@ public class MainActivity extends AppCompatActivity {
         //Button button = (Button) view;
         Intent intent = new Intent(this, Result.class);
         startActivity(intent);
+    }
 
 
-    public void number(View view) {
+    public void roll(View view) {
         //Button button = (Button) view;
-        Intent diceIntent = new Intent(this, NumberResult.class);
-        startActivity(diceIntent);
+        Intent intent = new Intent(this, DiceResult.class);
+        startActivity(intent);
+
+    }
 
 
 
@@ -81,6 +78,6 @@ public class MainActivity extends AppCompatActivity {
             return (face == HEADS);
         }*/
     }
-    }
+
 
 

@@ -28,7 +28,7 @@
                 android:value="com.example.victorialee.coinflip.MainActivity" />
         </activity>
         <activity
-            android:name=".NumberResult"
+            android:name=".DiceResult"
             android:label="@string/title_activity_number_result"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
