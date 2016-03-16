@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void flip(View view) {
         //Button button = (Button) view;
-        Intent intent = new Intent(this, Result.class);
+        Intent intent = new Intent(this, CoinResult.class);
         startActivity(intent);
     }
 
@@ -60,24 +60,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-     /*   final int HEADS = 0;
-        final int TAILS = 1;
-        int face;
-
-        face = (int) (Math.random() * 2);
-
-    if (face == HEADS){
-
-
-
-        }
     }
 
-        public boolean isHeads()
-        {
-            return (face == HEADS);
-        }*/
-    }
 
 
 

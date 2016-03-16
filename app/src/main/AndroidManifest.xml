@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Result"
+            android:name=".CoinResult"
             android:label="@string/title_activity_result"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -30,6 +30,24 @@
         <activity
             android:name=".DiceResult"
             android:label="@string/title_activity_number_result"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.victorialee.coinflip.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.victorialee.resulthistory.ResultHistory"
+            android:label="@string/title_activity_result_history"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.victorialee.coinflip.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CoinResult$ViewHistory"
+            android:label="@string/title_activity_view_history"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
