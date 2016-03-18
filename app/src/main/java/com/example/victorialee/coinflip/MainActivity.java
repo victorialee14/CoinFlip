@@ -58,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void view(View view) {
+        //Button button = (Button) view;
+        Intent intent = new Intent(this, ViewHistory.class);
+        startActivity(intent);
+
+    }
 
 
     }

@@ -54,6 +54,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.victorialee.coinflip.MainActivity" />
         </activity>
+        <activity
+            android:name=".ViewHistory"
+            android:label="@string/title_activity_view_history"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.victorialee.coinflip.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

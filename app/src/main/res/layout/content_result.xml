@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View History"
-        android:onClick="history"
+        android:onClick="view"
         android:id="@+id/button5"
         android:layout_below="@+id/result_textview"
         android:layout_alignEnd="@+id/result_textview"

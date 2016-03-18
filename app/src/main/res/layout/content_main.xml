@@ -35,12 +35,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result History"
+        android:text="View History"
+        android:onClick="view"
         android:id="@+id/button3"
-        android:onClick="history"
-        android:layout_marginTop="52dp"
         android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp" />
 
 
 </RelativeLayout>
