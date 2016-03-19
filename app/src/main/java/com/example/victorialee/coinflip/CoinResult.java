@@ -8,8 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.ImageView;
 
 public class CoinResult extends AppCompatActivity {
+    private static String[] history = new String[15];
+    private static int counter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,14 +21,6 @@ public class CoinResult extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         flip();
     }
@@ -41,12 +36,20 @@ public class CoinResult extends AppCompatActivity {
         if (face == HEADS) {
             TextView textView = (TextView) findViewById(R.id.result_textview);
             textView.setText("heads");
+            history[counter] = "Heads";
         }
         else {
             TextView textView = (TextView) findViewById(R.id.result_textview);
             textView.setText("tails");
-
+            history[counter] = "Tails";
         }
+        counter++;
+    }
+    public String[] getHistory(){
+        return history;
+    }
+    public int getCounter(){
+        return counter;
     }
 
     }

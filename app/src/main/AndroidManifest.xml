@@ -63,6 +63,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.victorialee.coinflip.MainActivity" />
         </activity>
+        <activity android:name=".AboutUs"></activity>
     </application>
 
 </manifest>

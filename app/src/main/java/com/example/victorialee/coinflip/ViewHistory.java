@@ -6,8 +6,12 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
+import java.lang.String;
+import java.util.*;
 
 public class ViewHistory extends AppCompatActivity {
+    CoinResult coinResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,20 +19,46 @@ public class ViewHistory extends AppCompatActivity {
         setContentView(R.layout.activity_view_history);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        coinResult = new CoinResult();
         view();
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
-    public void view(){
-
+    public void view() {
+        TextView textView = (TextView) findViewById(R.id.history_list);
+        String text = "";
+        for (int i = 0; i < coinResult.getHistory().length - 1; i++) {
+            if (coinResult.getHistory()[i] != null) {
+                text += "\n" + coinResult.getHistory()[i];
+            }
+        }
+        textView.setText(text);
     }
-}
+
+
+/*    public void alphaSort(CoinResult[] args) {
+        TextView textView = (TextView) findViewById(R.id.history_list);
+        CoinResult[] names = {coinResult};
+        alphaSort(names);
+        for (int k = 0; k < 15; k++) {
+            alphaSort += "\n" + coinResult.getHistory()[k];
+                }
+        textView.setText(names);
+            }*/
+/*
+    public static void alphaSort(String[] history){
+
+
+	   *//* Sort statement*//*
+        Collections.sort(history);
+
+	   *//* Sorted List*//*
+        for(String counter: history){
+            System.out.println(counter);*/
+        }
+
+
+
+

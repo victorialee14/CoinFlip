@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
 
     }
 
@@ -64,7 +64,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-
+    public void about(View view) {
+        //Button button = (Button) view;
+        Intent intent = new Intent(this, AboutUs.class);
+        startActivity(intent);
+    }
 
     }
 
