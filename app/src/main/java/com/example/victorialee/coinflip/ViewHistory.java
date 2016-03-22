@@ -38,6 +38,7 @@ public class ViewHistory extends AppCompatActivity {
         textView.setText(text);
     }
 
+//Alphabetises the 'View History' array.
     public void sortHistory(View view) {
         String t;
         for (int i = 0; i < coinResult.getHistory().length; i++) {
@@ -56,26 +57,8 @@ public class ViewHistory extends AppCompatActivity {
         }
         view();
     }
-/*    public void alphaSort(CoinResult[] args) {
-        TextView textView = (TextView) findViewById(R.id.history_list);
-        CoinResult[] names = {coinResult};
-        alphaSort(names);
-        for (int k = 0; k < 15; k++) {
-            alphaSort += "\n" + coinResult.getHistory()[k];
-                }
-        textView.setText(names);
-            }*/
-/*
-    public static void alphaSort(String[] history){
 
-
-	   *//* Sort statement*//*
-        Collections.sort(history);
-
-	   *//* Sorted List*//*
-        for(String counter: history){
-            System.out.println(counter);*/
-        }
+}
 
 
 
