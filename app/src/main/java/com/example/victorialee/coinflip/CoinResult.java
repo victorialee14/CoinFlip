@@ -25,26 +25,36 @@ public class CoinResult extends AppCompatActivity {
         flip();
     }
 
+//Coin flip activity
     public void flip(){
 
         final int HEADS = 0;
         final int TAILS = 1;
         int face;
 
+//Generates random number between zero and one.
         face = (int) (Math.random() * 2);
 
+//Displays result 'heads' if the generated random number equals zero.
         if (face == HEADS) {
             TextView textView = (TextView) findViewById(R.id.result_textview);
             textView.setText("heads");
+
+            //Keeps record of 'heads' results for 'View History' page.
             history[counter] = "Heads";
         }
+
+//If the generated random number does not equal zero, the displayed result will show up as 'tails' (random number = 1).
         else {
             TextView textView = (TextView) findViewById(R.id.result_textview);
             textView.setText("tails");
+
+            //Keeps record of 'tails' results for 'View History' page.
             history[counter] = "Tails";
         }
         counter++;
     }
+
     public String[] getHistory(){
         return history;
     }

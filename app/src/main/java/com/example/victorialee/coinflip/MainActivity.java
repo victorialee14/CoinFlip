@@ -43,14 +43,14 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
+//Flips coin: sends user to coin flip result page when button is pressed.
     public void flip(View view) {
         //Button button = (Button) view;
         Intent intent = new Intent(this, CoinResult.class);
         startActivity(intent);
     }
 
-
+//Rolls dice: sends user to dice result page when button is pressed.
     public void roll(View view) {
         //Button button = (Button) view;
         Intent intent = new Intent(this, DiceResult.class);
@@ -58,12 +58,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+//Sends user to 'View History' page where user can view their past results from the coin flip activity when button 'View History is pressed.
     public void view(View view) {
         //Button button = (Button) view;
         Intent intent = new Intent(this, ViewHistory.class);
         startActivity(intent);
 
     }
+
+//Sends user to 'About Us' page when button 'About Us' is pressed.
     public void about(View view) {
         //Button button = (Button) view;
         Intent intent = new Intent(this, AboutUs.class);

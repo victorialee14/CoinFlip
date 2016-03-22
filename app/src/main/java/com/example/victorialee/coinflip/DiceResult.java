@@ -29,14 +29,17 @@ public class DiceResult extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         roll();
     }
+
+//Dice roll activity.
     public void roll() {
         final String[] faces;
         int face;
 
+//Generates random number between one and six.
         getFace((int) (Math.random() * 6) + 1);
     }
 
-
+//Switch statements paired with random number result to display the resulting dice roll number.
     public void getFace(int number) {
         switch (number) {
             case 1:

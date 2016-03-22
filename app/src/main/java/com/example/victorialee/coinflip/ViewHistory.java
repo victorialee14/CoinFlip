@@ -26,6 +26,7 @@ public class ViewHistory extends AppCompatActivity {
 
     }
 
+//Creates an array that displays the user's coin flip history sequentially.
     public void view() {
         TextView textView = (TextView) findViewById(R.id.history_list);
         String text = "";
@@ -37,7 +38,18 @@ public class ViewHistory extends AppCompatActivity {
         textView.setText(text);
     }
 
-
+    public void sortHistory() {
+        String t;
+        for (int i = 0; i < coinResult.getHistory().length; i++) {
+            for (int j = 0; j < coinResult.getHistory().length - 1 - i; j++) {
+                if (coinResult.getHistory()[j].compareTo(coinResult.getHistory()[j + 1]) > 0) {
+                    t = coinResult.getHistory()[j];
+                    coinResult.getHistory()[j] = coinResult.getHistory()[j + 1];
+                    coinResult.getHistory()[j + 1] = t;
+                }
+            }
+        }
+    }
 /*    public void alphaSort(CoinResult[] args) {
         TextView textView = (TextView) findViewById(R.id.history_list);
         CoinResult[] names = {coinResult};
