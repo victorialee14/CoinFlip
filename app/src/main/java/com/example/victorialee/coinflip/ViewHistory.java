@@ -38,14 +38,19 @@ public class ViewHistory extends AppCompatActivity {
         textView.setText(text);
     }
 
-    public void sortHistory() {
+    public void sortHistory(View view) {
         String t;
         for (int i = 0; i < coinResult.getHistory().length; i++) {
-            for (int j = 0; j < coinResult.getHistory().length - 1 - i; j++) {
-                if (coinResult.getHistory()[j].compareTo(coinResult.getHistory()[j + 1]) > 0) {
-                    t = coinResult.getHistory()[j];
-                    coinResult.getHistory()[j] = coinResult.getHistory()[j + 1];
-                    coinResult.getHistory()[j + 1] = t;
+            if (coinResult.getHistory()[i] != null) {
+                for (int j = 0; j < coinResult.getHistory().length - 1 - i; j++) {
+                    if (coinResult.getHistory()[j + 1] != null) {
+                        if (coinResult.getHistory()[j].compareTo(coinResult.getHistory()[j + 1]) > 0) {
+                            t = coinResult.getHistory()[j];
+                            coinResult.getHistory()[j] = coinResult.getHistory()[j + 1];
+                            coinResult.getHistory()[j + 1] = t;
+                        }
+
+                    }
                 }
             }
         }
