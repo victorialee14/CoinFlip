@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:text="Sort Alphabetically"
         android:id="@+id/button4"
-        android:onClick="alphaSort"
+        android:onClick="sortHistory"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="66dp" />

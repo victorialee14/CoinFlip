@@ -49,6 +49,7 @@ public class ViewHistory extends AppCompatActivity {
                 }
             }
         }
+        view();
     }
 /*    public void alphaSort(CoinResult[] args) {
         TextView textView = (TextView) findViewById(R.id.history_list);
