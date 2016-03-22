@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:text="Flip a coin"
         android:id="@+id/button"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="73dp"
         android:onClick="flip"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/button2" />
