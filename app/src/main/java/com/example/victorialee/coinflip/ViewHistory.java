@@ -26,11 +26,12 @@ public class ViewHistory extends AppCompatActivity {
 
     }
 
-//Creates an array that displays the user's coin flip history sequentially.
+//Adds coin flip results to array and displays results in a list.
     public void view() {
         TextView textView = (TextView) findViewById(R.id.history_list);
         String text = "";
         for (int i = 0; i < coinResult.getHistory().length - 1; i++) {
+            //Prevents nulls from being displayed.
             if (coinResult.getHistory()[i] != null) {
                 text += "\n" + coinResult.getHistory()[i];
             }

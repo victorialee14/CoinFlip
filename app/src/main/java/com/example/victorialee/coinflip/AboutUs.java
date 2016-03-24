@@ -16,6 +16,6 @@ public class AboutUs extends AppCompatActivity {
 //About Us page: provides a text description of the app.
     public void about(){
         TextView textView = (TextView) findViewById(R.id.about_textView);
-        textView.setText("This app is the most cutting edge app on the market, it performs tasks like no other. Ever needed to make a decision but you don't have a coin on hand to flip, or been playing a board game and you have lost the dice? Well look no further. Our app 'fliproll' can perform both for you! Special thanks to Elias Djurfeldt, an esteemed programmer whose programming history goes back to his origins in Gothenburg, Sweden. Without him this app wouldn't be where it is today.");
+        textView.setText("This app is the most cutting edge app on the market, it performs tasks like no other. Ever needed to make a decision but you don't have a coin on hand to flip, or been playing a board game and you have lost the dice? Well look no further. Our app 'fliproll' can perform both for you!");
     }
 }

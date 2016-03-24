@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.ImageView;
 
 public class CoinResult extends AppCompatActivity {
+    //Creates array of size 15.
     private static String[] history = new String[15];
     private static int counter = 0;
 
@@ -55,6 +56,7 @@ public class CoinResult extends AppCompatActivity {
         counter++;
     }
 
+//Returns history results.
     public String[] getHistory(){
         return history;
     }
